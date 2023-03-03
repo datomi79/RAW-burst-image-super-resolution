@@ -8,6 +8,9 @@ import argparse
 def download_burstsr_dataset(download_path):
     out_dir = download_path + '/burstsr_dataset'
 
+    # Create subfolder if it does not exist
+    os.makedirs(out_dir, exist_ok=True)
+
     # Download train folders
     for i in range(9):
         if not os.path.isfile('{}/train_{:02d}.zip'.format(out_dir, i)):
