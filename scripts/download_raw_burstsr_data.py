@@ -14,6 +14,9 @@ def load_txt(path):
 def download_raw_burstsr_data(download_path):
     out_dir = download_path + '/burstsr_full_images'
 
+    # Create subfolder if it does not exist
+    os.makedirs(out_dir, exist_ok=True)
+
     # Download train folders
     lispr_path = os.path.join(os.path.dirname(os.path.realpath(__file__)), '..')
 
