@@ -62,7 +62,7 @@ def download_raw_burstsr_data(download_path):
         with zipfile.ZipFile('{}/{}.zip'.format(val_out_dir, burst_id), 'r') as zip_ref:
             zip_ref.extractall('{}/{}'.format(val_out_dir, burst_id))
 
-        os.remove('{}/{}.zip'.format(val_out_dir, burst_id))
+        # os.remove('{}/{}.zip'.format(val_out_dir, burst_id))
 
     # Delete training zips
     for burst_id in train_burst_list:
