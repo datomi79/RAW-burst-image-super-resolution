@@ -1,3 +1,4 @@
+import argparse
 import torch.nn.functional as F
 import cv2
 from datasets.synthetic_burst_train_set import SyntheticBurst
@@ -9,7 +10,13 @@ from datasets.zurich_raw2rgb_dataset import ZurichRAW2RGB
 
 
 def main():
-    zurich_raw2rgb = ZurichRAW2RGB(root='PATH_TO_ZURICH_RAW_TO_RGB', split='test')
+
+    parser = argparse.ArgumentParser(description='Provides an example on how to use the SyntheticBurst datase')
+    parser.add_argument('path', type=str, help='Path to the Zurich RAW to RGB dataset')
+
+    args = parser.parse_args()
+
+    zurich_raw2rgb = ZurichRAW2RGB(root=args.path, split='train')
     dataset = SyntheticBurst(zurich_raw2rgb, burst_size=3, crop_sz=256)
 
     data_loader = DataLoader(dataset, batch_size=2)
