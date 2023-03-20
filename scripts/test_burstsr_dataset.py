@@ -1,3 +1,4 @@
+import argparse
 import torch.nn.functional as F
 import cv2
 from datasets.burstsr_dataset import BurstSRDataset
@@ -7,8 +8,14 @@ from utils.data_format_utils import convert_dict
 
 
 def main():
+
+    parser = argparse.ArgumentParser(description='Provides an example on how to use the pre-processed Burst SR dataset')
+    parser.add_argument('path', type=str, help='Path to the Burst SR dataset')
+
+    args = parser.parse_args()
+
     # Load dataset
-    dataset = BurstSRDataset(root='PATH_TO_BURST_SR',
+    dataset = BurstSRDataset(root=args.path,
                              split='val', burst_size=3, crop_sz=56, random_flip=False)
 
     data_loader = DataLoader(dataset, batch_size=2)
