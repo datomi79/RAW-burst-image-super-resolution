@@ -47,7 +47,7 @@ ETH Zurich/PBL, Sponsored by Huawei TechArena
 - Lukas Cavigelli (lukas.cavigelli@huawei.com)
 - Michele Magno (michele.magno@pbl.ee.ethz.ch)
 - Luca Pascarella (luca.pascarella@pbl.ee.ethz.ch)
-- Davide Plozza (dplozza@student.ethz.ch)
+- Davide Plozza (davide.plozza@pbl.ee.ethz.ch)
 
 ## Terms and conditions
 The terms and conditions for participating in the challenge are provided [TODO]([https](https://github.com/dplozza/RAW-burst-image-super-resolution/))
