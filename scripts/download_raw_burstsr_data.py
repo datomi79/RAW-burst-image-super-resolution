@@ -24,7 +24,7 @@ def download_raw_burstsr_data(download_path):
     train_out_dir = '{}/train/'.format(out_dir)
     os.makedirs(train_out_dir, exist_ok=True)
 
-    train_burst_list = train_burst_list[:2]
+    # train_burst_list = train_burst_list[:2]
     for burst_id in train_burst_list:
         if not os.path.isfile('{}/{}.zip'.format(train_out_dir, burst_id)):
             print('Downloading {}'.format(burst_id))
@@ -39,7 +39,7 @@ def download_raw_burstsr_data(download_path):
     val_out_dir = '{}/val/'.format(out_dir)
     os.makedirs(val_out_dir, exist_ok=True)
 
-    val_burst_list = val_burst_list[:1]
+    # val_burst_list = val_burst_list[:1]
     for burst_id in val_burst_list:
         if not os.path.isfile('{}/{}.zip'.format(val_out_dir, burst_id)):
             print('Downloading {}'.format(burst_id))
@@ -55,6 +55,9 @@ def download_raw_burstsr_data(download_path):
         with zipfile.ZipFile('{}/{}.zip'.format(train_out_dir, burst_id), 'r') as zip_ref:
             zip_ref.extractall('{}/{}'.format(train_out_dir, burst_id))
 
+        # Delete training zips
+        os.remove('{}/{}.zip'.format(train_out_dir, burst_id))
+
     # Unpack val set
     print('Unpacking val')
     for burst_id in val_burst_list:
@@ -62,14 +65,7 @@ def download_raw_burstsr_data(download_path):
         with zipfile.ZipFile('{}/{}.zip'.format(val_out_dir, burst_id), 'r') as zip_ref:
             zip_ref.extractall('{}/{}'.format(val_out_dir, burst_id))
 
-        # os.remove('{}/{}.zip'.format(val_out_dir, burst_id))
-
-    # Delete training zips
-    for burst_id in train_burst_list:
-        os.remove('{}/{}.zip'.format(train_out_dir, burst_id))
-
-    # Delete val zips
-    for burst_id in val_burst_list:
+        # Delete val zips
         os.remove('{}/{}.zip'.format(val_out_dir, burst_id))
 
 
