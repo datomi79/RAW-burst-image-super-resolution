@@ -1,9 +1,17 @@
+import os
+import sys
+
+# add the based repository path to the system path, to enable absolute imports
+repo_path = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+if repo_path not in sys.path:
+    sys.path.append(repo_path)
+
+import argparse
 import torch.nn.functional as F
 import cv2
 from datasets.synthetic_burst_test_set import SyntheticBurstTest
 import torch
 import numpy as np
-import os
 
 
 class SimpleBaseline:
@@ -18,20 +26,25 @@ class SimpleBaseline:
 
 
 def main():
-    dataset = SyntheticBurstTest('PATH_TO_SyntheticBurstTest')
-    out_dir = 'PATH_WHERE_RESULTS_ARE_SAVED'
+
+    parser = argparse.ArgumentParser(description='Provides an example on how to save the results on SyntheticBurstTest dataset for the final submission')
+    parser.add_argument('in_path', type=str, help='Path to the Synthetic test set')
+    parser.add_argument('out_path', type=str, help='Path where the results are saved')
+    parser.add_argument('--device', type=str, default='cuda' ,choices=['cpu','cuda'], help='Device to use (cpu or cuda)')
+    args = parser.parse_args()
+
+    dataset = SyntheticBurstTest(args.in_path)
 
     # TODO Set your network here
     net = SimpleBaseline()
 
-    device = 'cuda'
-    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(args.out_path, exist_ok=True)
 
     for idx in range(len(dataset)):
         burst, meta_info = dataset[idx]
         burst_name = meta_info['burst_name']
 
-        burst = burst.to(device).unsqueeze(0)
+        burst = burst.to(args.device).unsqueeze(0)
 
         with torch.no_grad():
             net_pred = net(burst)
@@ -40,7 +53,7 @@ def main():
         net_pred_np = (net_pred.squeeze(0).permute(1, 2, 0).clamp(0.0, 1.0) * 2 ** 14).cpu().numpy().astype(np.uint16)
 
         # Save predictions as png
-        cv2.imwrite('{}/{}.png'.format(out_dir, burst_name), net_pred_np)
+        cv2.imwrite('{}/{}.png'.format(args.out_path, burst_name), net_pred_np)
 
 
 if __name__ == '__main__':

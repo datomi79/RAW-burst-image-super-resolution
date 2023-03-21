@@ -1,3 +1,11 @@
+import os
+import sys
+
+# add the based repository path to the system path, to enable absolute imports
+repo_path = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+if repo_path not in sys.path:
+    sys.path.append(repo_path)
+
 import argparse
 import torch.nn.functional as F
 import cv2

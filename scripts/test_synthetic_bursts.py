@@ -1,3 +1,12 @@
+import os
+import sys
+
+# add the based repository path to the system path, to enable absolute imports
+repo_path = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+if repo_path not in sys.path:
+    sys.path.append(repo_path)
+
+
 import argparse
 import torch.nn.functional as F
 import cv2
@@ -11,7 +20,7 @@ from datasets.zurich_raw2rgb_dataset import ZurichRAW2RGB
 
 def main():
 
-    parser = argparse.ArgumentParser(description='Provides an example on how to use the SyntheticBurst datase')
+    parser = argparse.ArgumentParser(description='Provides an example on how to use the SyntheticBurst dataset')
     parser.add_argument('path', type=str, help='Path to the Zurich RAW to RGB dataset')
 
     args = parser.parse_args()
