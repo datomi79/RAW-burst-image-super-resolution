@@ -45,7 +45,7 @@ If you wish to participate in the Synthetic track, please register for the chall
 The proposed methods will be ranked using the fidelity (in terms of PSNR) with the high-resolution ground truth, i.e. the linear sensor space image used to generate the burst. The focus of the challenge is on learning to reconstruct the original high-resolution image, and not the subsequent post-processing. Hence, the PSNR computation will be computed in the linear sensor space, before post-processing steps such as color correction, white-balancing, gamma correction etc.
 
 #### Validation
-The results on the validation set can be uploaded on the Codalab server (live now)[TODO] to obtain the performance measures, as well as a live leaderboard ranking. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here][TODO].
+The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/12007#learn_the_details) to obtain the performance measures, as well as a live leaderboard ranking. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here][TODO].
 
 #### Final Submission
 The test set is now public. You can download the test set containing 92 synthetic bursts from this [link][TODO]. You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
@@ -55,7 +55,8 @@ For the final submission, you need to submit:
 * The code and model files necessary to reproduce your results.
 * A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here][TODO].  
 
-The results, code, and factsheet should be submitted via the [google form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link)
+The results, code, and factsheet should be submitted via a google form, which will be made available with the release of test data for Track 1.
+<!-- The results, code, and factsheet should be submitted via the [google form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link) -->
 
 ## Toolkit
 We also provide a Python toolkit which includes the necessary data loading and 
@@ -119,7 +120,8 @@ The test set will be made avaliable
 [download_burstsr_dataset.py](scripts/download_burstsr_dataset.py) script. In case of issues with the script, the download links 
 are available [here](data_specs/burstsr_links.md).
 
-**BurstSR train and validation set (raw):** The dataset can be downloaded and unpacked using the [scripts/download_raw_burstsr_data.py](scripts/download_raw_burstsr_data.py) script.
+**BurstSR train and validation set (raw):** The dataset can be downloaded and unpacked using the [scripts/download_raw_burstsr_data.py](scripts/download_raw_burstsr_data.py) script. In case of issues with the script, the download links 
+are available [here](data_specs/burstsr_links.md).
 
 **Zurich RAW to RGB mapping set:** The RGB images from the training split of the 
 [Zurich RAW to RGB mapping dataset][TODO](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset) 
