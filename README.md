@@ -1,10 +1,9 @@
-# RAW-burst-image-super-resolution
+# EagleSnap Competition 2023: RAW Burst Image Super Resolution
 Official repository for the EagleSnap Competition 2023: RAW Burst Image Super Resolution
 
 ## Introduction
 EagleSnap Super-Resolution Competition is a machine learning challenge aimed at enhancing RAW images. The goal of this competition is to generate a denoised, demosaicked, higher-resolution image, given a RAW burst as input. The competition has two tracks, namely
-- Track 1: Maximize quality based on a simple metric, and
-- Track 2: Minimize compute time with quality requirement.
+- Track 1: Maximize quality based on a simple metric.
 
 The top ranked participants in each track will be awarded and all participants are invited to submit a report describing their solution.
 
@@ -57,11 +56,6 @@ For the final submission, you need to submit:
 * A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here][TODO].  
 
 The results, code, and factsheet should be submitted via the [google form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link)
-
-
-### Track 2: Minimize compute time with quality requirement
-
-TOOD
 
 ## Toolkit
 We also provide a Python toolkit which includes the necessary data loading and 
