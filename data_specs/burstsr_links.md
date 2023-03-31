@@ -13,3 +13,19 @@ train_08: [https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/train_08.zip](h
 
 ### Validation set
 val: [https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip](https://data.vision.ee.ethz.ch/bhatg/BurstSRChallenge/val.zip)
+
+
+## BurstSR train and validation set (raw)
+
+
+### Training set
+
+Each training image can be downloaded from the following link, by substituting the image numbers `<ID>` from [burstsr_train.txt](burstsr_train.txt).
+
+`https://data.vision.ee.ethz.ch/bhatg/burstsr_full_release/train/<ID>.zip`
+
+### Training set
+
+Each validation image can be downloaded from the following link, by substituting the image numbers `<ID>` from [burstsr_val.txt](burstsr_val.txt).
+
+`https://data.vision.ee.ethz.ch/bhatg/burstsr_full_release/val/<ID>.zip`
