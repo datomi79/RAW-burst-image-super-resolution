@@ -11,6 +11,7 @@ The top ranked participants in each track will be awarded and all participants a
 
 - 01/03/2023 Release of train and validation data
 - 01/04/2023 Validation server for Track 1 online
+- 01/05/2023 Release of test data for Track 1
 - 01/06/2023 Tool and report submission deadline
 
 ## Description
@@ -37,9 +38,8 @@ using the RGB images from the validation split of the
 [BurstSR dataset][todo].
 
 #### Registration
-[TODO]
-<!---If you wish to participate in the Synthetic track, please register for the challenge at the 
-[codalab page](https://codalab.lisn.upsaclay.fr/competitions/1750#learn_the_details) to get access to the evaluation server and receive email notifications for the challenge. --->
+If you wish to participate in the Synthetic track, please register for the challenge at the 
+[codalab page](https://codalab.lisn.upsaclay.fr/competitions/12007#learn_the_details) to get access to the evaluation server and receive email notifications for the challenge.
 
 #### Evaluation
 The proposed methods will be ranked using the fidelity (in terms of PSNR) with the high-resolution ground truth, i.e. the linear sensor space image used to generate the burst. The focus of the challenge is on learning to reconstruct the original high-resolution image, and not the subsequent post-processing. Hence, the PSNR computation will be computed in the linear sensor space, before post-processing steps such as color correction, white-balancing, gamma correction etc.
@@ -111,13 +111,13 @@ We provide the following data as part of the challenge.
 The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_val_2022.zip).
 
 **Synthetic test set:** The official test set for track 1. The dataset contains 92 synthetic bursts, each containing 
-14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset. 
-The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip).
+14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset.
+The test set will be made avaliable 
+<!-- The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip). -->
 
 **BurstSR train and validation set (pre-processed):** The dataset has been split into 10 parts and can be downloaded and unpacked using the 
-[download_burstsr_dataset.py](scripts/download_burstsr_dataset.py) script
-<!--- In case of issues with the script, the download links 
-are available [here](burstsr_links.md). --->
+[download_burstsr_dataset.py](scripts/download_burstsr_dataset.py) script. In case of issues with the script, the download links 
+are available [here](data_specs/burstsr_links.md).
 
 **BurstSR train and validation set (raw):** The dataset can be downloaded and unpacked using the [scripts/download_raw_burstsr_data.py](scripts/download_raw_burstsr_data.py) script.
 
@@ -137,7 +137,7 @@ ETH Zurich/PBL, Sponsored by Huawei TechArena
 - Davide Plozza (davide.plozza@pbl.ee.ethz.ch)
 
 ## Terms and conditions
-The terms and conditions for participating in the challenge are provided [TODO]([https](https://github.com/dplozza/RAW-burst-image-super-resolution/))
+The terms and conditions for participating in the challenge are provided there [TODO].
 
 ## Acknowledgements
 The toolkit was largely adapted from the [NTIRE22_BURSTSR](https://github.com/goutamgmb/NTIRE22_BURSTSR) challenge repository.
