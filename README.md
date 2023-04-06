@@ -35,7 +35,7 @@ validation split of the [BurstSR dataset](https://openaccess.thecvf.com/content/
 **Validation set:** The bursts in the validation set have been 
 pre-generated with the [data generation code](datasets/synthetic_burst_train_set.py), 
 using the RGB images from the validation split of the 
-[BurstSR dataset][todo].
+raw BurstSR dataset. The dataset can be downloaded from [here](https://figshare.com/articles/dataset/synburst_val_2023_zip/22439116).
 
 #### Registration
 If you wish to participate in the Synthetic track, please register for the challenge at the 
@@ -45,15 +45,17 @@ If you wish to participate in the Synthetic track, please register for the chall
 The proposed methods will be ranked using the fidelity (in terms of PSNR) with the high-resolution ground truth, i.e. the linear sensor space image used to generate the burst. The focus of the challenge is on learning to reconstruct the original high-resolution image, and not the subsequent post-processing. Hence, the PSNR computation will be computed in the linear sensor space, before post-processing steps such as color correction, white-balancing, gamma correction etc.
 
 #### Validation
-The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/12007#learn_the_details) to obtain the performance measures, as well as a live leaderboard ranking. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here][TODO].
+The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/12007#learn_the_details) to obtain the performance measures, as well as a live leaderboard ranking. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_2023_zip/22439179).
 
 #### Final Submission
-The test set is now public. You can download the test set containing 92 synthetic bursts from this [link][TODO]. You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
+<!-- The test set is now public. You can download the test set containing 92 synthetic bursts from this [link][TODO]. -->
+The test set will be made public in a later date, see [Dates](#dates).
+You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) in the latest commit to load the burst sequences.
 
 For the final submission, you need to submit:
 * The predicted outputs for each burst sequence as a zip folder, in the same format as used for uploading results to the codalab validation server.
 * The code and model files necessary to reproduce your results.
-* A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here][TODO].  
+* A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://figshare.com/articles/media/RAW_Burst_Image_Super_Resolution_Template_zip/22439071).  
 
 The results, code, and factsheet should be submitted via a google form, which will be made available with the release of test data for Track 1.
 <!-- The results, code, and factsheet should be submitted via the [google form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link) -->
@@ -109,11 +111,11 @@ We provide the following data as part of the challenge.
 
 **Synthetic validation set:** The official validation set for track 1. The dataset contains 100 synthetic bursts, each containing 
 14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the validation split of the BurstSR dataset. 
-The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_val_2022.zip).
+The dataset can be downloaded from [here](https://figshare.com/articles/dataset/synburst_val_2023_zip/22439116).
 
 **Synthetic test set:** The official test set for track 1. The dataset contains 92 synthetic bursts, each containing 
 14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset.
-The test set will be made avaliable 
+The test set will be made avaliable at a later date, see [Dates](#dates).
 <!-- The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip). -->
 
 **BurstSR train and validation set (pre-processed):** The dataset has been split into 10 parts and can be downloaded and unpacked using the 
@@ -124,8 +126,8 @@ are available [here](data_specs/burstsr_links.md).
 are available [here](data_specs/burstsr_links.md).
 
 **Zurich RAW to RGB mapping set:** The RGB images from the training split of the 
-[Zurich RAW to RGB mapping dataset][TODO](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset) 
-can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/zurich-raw-to-rgb.zip). These RGB images can be 
+[Zurich RAW to RGB mapping dataset](http://people.ee.ethz.ch/~ihnatova/pynet.html#dataset) 
+can be downloaded from [here](https://data.vision.ee.ethz.ch/bhatg/zurich-raw-to-rgb.zip). These RGB images can be 
 used to generate synthetic bursts for training using  the SyntheticBurst class.
 
 
@@ -139,7 +141,7 @@ ETH Zurich/PBL, Sponsored by Huawei TechArena
 - Davide Plozza (davide.plozza@pbl.ee.ethz.ch)
 
 ## Terms and conditions
-The terms and conditions for participating in the challenge are provided there [TODO].
+The terms and conditions for participating in the challenge are provided here [TODO].
 
 ## Acknowledgements
 The toolkit was largely adapted from the [NTIRE22_BURSTSR](https://github.com/goutamgmb/NTIRE22_BURSTSR) challenge repository.
