@@ -6,7 +6,7 @@ conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
 echo "****************** Installing onnx runtime ******************"
 conda install -c conda-forge onnxruntime onnx
-conda install -c "conda-forge/label/broken" onnx
+pip install onnx
 
 echo ""
 echo ""
