@@ -76,10 +76,10 @@ If you wish to participate in Track 2, please register for the challenge at the 
 The models will be evaluated based on a combination of PSNR and inference speed. Specifically, we will use the following metric to rank the models:
 
 $$
-score = PSNR - 4*log10(t_{inf})
+score = PSNR - 4*log_{10}(T_{inference})
 $$
 
-The PSNR will be computed on the test set similarly to [Track 1](#track-1-maximize-quality-based-on-a-simple-metric), while $t_inf$ is the average inference time of the model computed on the test set.
+The PSNR will be computed on the test set similarly to [Track 1](#track-1-maximize-quality-based-on-a-simple-metric), while $T_{inference}$ is the average inference time of the model computed on the test set.
 The higher the score, the better the model. This metric aims to balance the trade-off between image quality and inference speed. 
 
 
