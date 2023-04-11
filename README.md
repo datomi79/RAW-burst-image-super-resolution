@@ -150,13 +150,20 @@ for track 1. The necessary packages can be installed with [anaconda](https://www
 ## Data
 We provide the following data as part of the challenge. 
 
-**Synthetic validation set:** The official validation set for track 1. The dataset contains 100 synthetic bursts, each containing 
+**Track 1 validation set:** The official validation set for Track 1. The dataset contains 100 synthetic bursts, each containing 
 14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the validation split of the BurstSR dataset. 
 The dataset can be downloaded from [here](https://figshare.com/articles/dataset/synburst_val_2023_zip/22439116).
 
-**Synthetic test set:** The official test set for track 1. The dataset contains 92 synthetic bursts, each containing 
-14 RAW images of 256x256 resolution. The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset.
+**Track 1 test set:** The official test set for Track 1. The dataset contains 100 synthetic bursts, each containing 
+14 RAW images of 256x256 resolution.
 The test set will be made avaliable at a later date, see [Dates](#dates).
+<!-- The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset. -->
+<!-- The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip). -->
+
+**Track 2 test set:** The official test set for Track 2. The dataset contains 100 synthetic bursts, each containing 
+14 RAW images of 256x256 resolution.
+The test set will be made avaliable at a later date, see [Dates](#dates).
+<!-- The synthetic bursts are generated from the RGB Canon images from the test split of the BurstSR dataset. -->
 <!-- The dataset can be downloaded from [here][TODO](https://data.vision.ee.ethz.ch/bhatg/synburst_test_2022.zip). -->
 
 **BurstSR train and validation set (pre-processed):** The dataset has been split into 10 parts and can be downloaded and unpacked using the 
