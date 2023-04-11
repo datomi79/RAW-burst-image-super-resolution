@@ -88,8 +88,8 @@ The higher the score, the better the model. This metric aims to balance the trad
 For this track there will be no online validation server.
 The test set will be made public at a later date, see [Dates](#dates). 
 
-The score will be computed using the [ONNX runtime](https://onnxruntime.ai/) on the CPU. The partecipants will be required to provide an ONNX model that can be run with the [save_results_onnx_inference.py](scripts/save_results_onnx_inference.py). This scripts also shows how the test set prediction will be generated for scoring (same format as [Track 1](#track-1-maximize-quality-based-on-a-simple-metric)), as well as an inference time measurement example. The final execution time will be computed with a more sophisticated procedure on a workstation with an Intel i9 13900k CPU.
-
+The score will be computed using the [ONNX runtime](https://onnxruntime.ai/) on the CPU. The partecipants will be required to provide an ONNX model that can be run with the [save_results_onnx_inference.py](scripts/save_results_onnx_inference.py). This scripts also shows how the test set prediction will be generated for scoring (same format as [Track 1](#track-1-maximize-quality-based-on-a-simple-metric)), as well as an inference time measurement example.
+The final execution time will be computed with a more sophisticated procedure on a workstation with an Intel i9 13900k CPU. 
 
 For the final submission, participants need to submit:
 * An ONNX model that can be run with [save_results_onnx_inference.py](scripts/save_results_onnx_inference.py).
@@ -114,7 +114,7 @@ evaluation scripts. The toolkit contains the following modules.
     * [synthetic_burst_val_set](datasets/synthetic_burst_val_set.py) can be used to load 
       the pre-generated synthetic validation set.
     * [synthetic_burst_test_set](datasets/synthetic_burst_test_set.py) can be used to load 
-      the pre-generated synthetic test set.
+      the pre-generated synthetic test set, for both Track 1 and 2.
     <!---* [realworld_burst_test_set](datasets/realworld_burst_test_set.py) can be used to load 
       the real world bursts for track 2 test set.--->
     * [burstsr_dataset](datasets/burstsr_dataset.py) provides the BurstSRDataset class which can be used to load the RAW bursts and high-resolution ground truths
@@ -132,12 +132,14 @@ evaluation scripts. The toolkit contains the following modules.
       dataset for submission on the evaluation server.
     * [save_results_synburst_test](scripts/save_results_synburst_test.py) provides an example
       on how to save the results on [SyntheticBurstTest](datasets/synthetic_burst_test_set.py) 
-      dataset for the final submission.
+      dataset for the final Track 1 submission.
     <!---* [save_results_realworld_test](scripts/save_results_realworld_test.py) provides an example
       on how to save the results on [RealWorldBurstTest](datasets/realworld_burst_test_set.py) 
       dataset for the final submission.--->
-    * [visualize_synburst_results](scripts/visualize_synburst_results.py) Visualize generated results on the synthetic burst 
-  validation set.
+    * [visualize_synburst_results](scripts/visualize_synburst_results.py) Visualize generated results on the synthetic burst validation set.
+    * [export_model_to_onnx](scripts/export_model_to_onnx.py) Example on how to export a PyTorch model to ONNX format (for Track 2).
+    * [save_results_onnx_inference.py](scripts/save_results_onnx_inference.py) Shows how the onnx models will be used for inference for Track 2 evaluation.
+  
     
 * [utils](utils): Contains utility functions.
 
