@@ -16,6 +16,14 @@ The top ranked participants in each track will be awarded and all participants a
 - End of August: Notification of winners.
 - 20/09/2023: Award cerimony.
 
+## Prizes
+
+The prizes will be awarded in the form of vouchers (e.g., Amazon vouchers) with the following values:
+
+| Track | 1<sup>st</sup> Prize | 2<sup>nd</sup> Prize | 3<sup>rd</sup> Prize |
+|-------|-------------|-------------|-------------|
+| 1     | CHF 1500    | CHF 800     | CHF 400     |
+| 2     | CHF 1500    | CHF 800     | CHF 400     | 
 
 ## Description
 
