@@ -10,11 +10,12 @@ The top ranked participants in each track will be awarded and all participants a
 
 ## Dates
 
-- 01/03/2023 Release of train and validation data
-- 01/04/2023 Validation server for Track 1 online
-- 01/05/2023 Release of test data for Track 1
-- 01/06/2023 Tool and report submission deadline
-- TODO Track 2 dates
+- 29/05/2023: Start of Track 1.
+- 12/06/2023: Start of Track 2.
+- 31/07/2023: Track 1 & 2 submission deadline.
+- End of August: Notification of winners.
+- 20/09/2023: Award cerimony.
+
 
 ## Description
 
@@ -188,8 +189,24 @@ ETH Zurich/PBL, Sponsored by Huawei TechArena
 - Luca Pascarella (luca.pascarella@pbl.ee.ethz.ch)
 - Davide Plozza (davide.plozza@pbl.ee.ethz.ch)
 
-## Terms and conditions
-The terms and conditions for participating in the challenge are provided here [TODO].
+## Competition Rules
+
+Please read these terms and conditions carefully before participating in the coding competition.
+By registering for the competition, you agree to be bound by the following terms and conditions:
+
+1. **Submission by Individuals or Teams:** A submission can be made by either a single person or a team consisting of an unlimited number of individuals. In the case of a team submission, the prize awarded will be shared among the team members. It is the responsibility of the team members to mutually decide on the distribution of any prizes received. The competition organizers will not be involved in the internal allocation of prizes within a team.
+2. **Eligibility:** At least one member of the team must be a registered student at a Swiss university during the sign-up process for the competition.
+3. **Team Limitation:** Each person can participate in a maximum of one team. Multiple registrations or participation in multiple teams will result in disqualification.
+4. **Team Composition and Code Sharing:** All contributors to a submission are considered team members. If a team utilizes code, programs, or libraries that are not self-authored, the source code or binary of such external resources must be publicly accessible. This ensures that other participating teams have access to the same resources and can review the code used in the submission.
+5. **Prize Eligibility:** All team members must be eligible to receive the prizes as per the laws and regulations of their respective countries. Participants must ensure that their involvement in the competition does not violate any government restrictions or sanctions. Failure to comply with this requirement may result in disqualification and forfeiture of any prizes awarded.
+6. **Multiple Tracks:** The competition consists of two tracks, namely Track A and Track B. Teams have the option to participate in either one or both tracks. However, registration must be made individually for each track. Teams cannot submit the same project for both tracks.
+7. **Registration and Submission Process:** Official registration for each track of the coding competition must be completed individually through the designated Google Form provided by the competition organizers. Each registered participant/team is required to provide the necessary information and details accurately in the form.
+8. **Submission Limitation:** Each team is allowed to submit a single submission per track. Multiple submissions from the same team for a single track will not be considered.
+9. **Codalab Validation Server:** The Codalab validation server is freely available for participants to use for testing and evaluation purposes. Its usage is not bound by any restrictions, as long as it complies with the competition guidelines and rules.
+10. **Exceptions and Rule Modifications:** The competition organizers reserve the right to grant exceptions to any of the aforementioned rules or modify the rules in the event of abuse, technical issues, or other unforeseen circumstances. Any changes or exceptions will be communicated to the participants in a fair and transparent manner.
+
+By submitting a project as an individual or a team, you agree to the aforementioned distribution of prizes in the case of a team submission.
+Please note that the competition organizers hold no liability or responsibility for any disputes or disagreements arising within a team regarding the distribution of prizes.
 
 ## Acknowledgements
 The toolkit was largely adapted from the [NTIRE22_BURSTSR](https://github.com/goutamgmb/NTIRE22_BURSTSR) challenge repository.
