@@ -41,8 +41,8 @@ using the RGB images from the validation split of the
 raw BurstSR dataset. The dataset can be downloaded from [here](https://figshare.com/articles/dataset/synburst_val_2023_zip/22439116).
 
 #### Registration
-If you wish to participate in Track 1, please register for the challenge at the 
-[codalab page](https://codalab.lisn.upsaclay.fr/competitions/12007#learn_the_details) to get access to the evaluation server and receive email notifications for the challenge.
+
+Refer to the [Competition Rules](#competition-rules).
 
 #### Evaluation
 The proposed methods will be ranked using the fidelity (in terms of PSNR) with the high-resolution ground truth, i.e. the linear sensor space image used to generate the burst. The focus of the challenge is on learning to reconstruct the original high-resolution image, and not the subsequent post-processing. Hence, the PSNR computation will be computed in the linear sensor space, before post-processing steps such as color correction, white-balancing, gamma correction etc.
@@ -60,8 +60,8 @@ For the final submission, you need to submit:
 * The code and model files necessary to reproduce your results.
 * A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://figshare.com/articles/media/RAW_Burst_Image_Super_Resolution_Template_zip/22439071).  
 
-The results, code, and factsheet should be submitted via a google form, which will be made available with the release of test data for Track 1.
-<!-- The results, code, and factsheet should be submitted via the [google form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link) -->
+The results, code, and factsheet should be submitted via a Google Form, which will be made available with the release of test data for Track 1.
+<!-- The results, code, and factsheet should be submitted via the [Google Form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link) -->
 
 ### Track 2: Minimize inference time while maximizing quality
 
@@ -71,7 +71,10 @@ The goal of this track is to optimize the trade-off between image quality and in
 
 
 #### Registration
-If you wish to participate in Track 2, please register for the challenge at the **TODO** [codalab page](test) to get access to the evaluation server and receive email notifications for the challenge.
+
+Refer to the [Competition Rules](#competition-rules).
+
+<!--If you wish to participate in Track 2, please register for the challenge at the **TODO** [codalab page](test) to get access to the evaluation server and receive email notifications for the challenge.-->
 
 #### Evaluation
 The models will be evaluated based on a combination of PSNR and inference speed. Specifically, we will use the following metric to rank the models:
