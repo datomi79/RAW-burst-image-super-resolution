@@ -40,8 +40,8 @@ translations and rotations, followed by bilinear downsampling. The generated bur
 then mosaicked and corrupted by random noise. 
 
 **Training set:** We provide [code](datasets/synthetic_burst_train_set.py) to generate the synthetic 
-bursts using any image dataset for training. Note that any image dataset **except the 
-validation split of the [BurstSR dataset](https://openaccess.thecvf.com/content/CVPR2021/papers/Bhat_Deep_Burst_Super-Resolution_CVPR_2021_paper.pdf)** can be used to generate synthetic bursts for training.  
+bursts using any image dataset for training. Note that any public image dataset **except the 
+validation split of the [BurstSR dataset](https://openaccess.thecvf.com/content/CVPR2021/papers/Bhat_Deep_Burst_Super-Resolution_CVPR_2021_paper.pdf)** can be used to generate synthetic bursts for training. The dataset has to be publicly accessible. Unpublished or self-made datasets are not allowed.
 
 **Validation set:** The bursts in the validation set have been 
 pre-generated with the [data generation code](datasets/synthetic_burst_train_set.py), 
@@ -65,7 +65,7 @@ You can use the dataset class provided in [synthetic_burst_test_set.py](datasets
 
 For the final submission, you need to submit:
 * The predicted outputs for each burst sequence as a zip folder, in the same format as used for uploading results to the codalab validation server.
-* The code and model files necessary to reproduce your results.
+* The code and model files necessary to reproduce your results. You should provide clear instructions on how to download the datasets and any external dependencies. The organizers need to have all the necessary resources in order to replicate both training and inference.
 * A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://figshare.com/articles/media/RAW_Burst_Image_Super_Resolution_Template_zip/22439071).  
 
 The results, code, and factsheet should be submitted via a Google Form, which will be made available with the release of test data for Track 1.
@@ -209,12 +209,13 @@ By registering for the competition, you agree to be bound by the following terms
 2. **Eligibility:** At least one member of the team must be a registered student at a Swiss university during the sign-up process for the competition.
 3. **Team Limitation:** Each person can participate in a maximum of one team. Multiple registrations or participation in multiple teams will result in disqualification.
 4. **Team Composition and Code Sharing:** All contributors to a submission are considered team members. If a team utilizes code, programs, or libraries that are not self-authored, the source code or binary of such external resources must be publicly accessible. This ensures that other participating teams have access to the same resources and can review the code used in the submission.
-5. **Prize Eligibility:** All team members must be eligible to receive the prizes as per the laws and regulations of their respective countries. Participants must ensure that their involvement in the competition does not violate any government restrictions or sanctions. Failure to comply with this requirement may result in disqualification and forfeiture of any prizes awarded.
-6. **Multiple Tracks:** The competition consists of two tracks, namely Track A and Track B. Teams have the option to participate in either one or both tracks. However, registration must be made individually for each track. Teams cannot submit the same project for both tracks.
-7. **Registration and Submission Process:** Official registration for each track of the coding competition must be completed individually through the designated Google Form provided by the competition organizers. Each registered participant/team is required to provide the necessary information and details accurately in the form.
-8. **Submission Limitation:** Each team is allowed to submit a single submission per track. Multiple submissions from the same team for a single track will not be considered.
-9. **Codalab Validation Server:** The Codalab validation server is freely available for participants to use for testing and evaluation purposes. Its usage is not bound by any restrictions, as long as it complies with the competition guidelines and rules.
-10. **Exceptions and Rule Modifications:** The competition organizers reserve the right to grant exceptions to any of the aforementioned rules or modify the rules in the event of abuse, technical issues, or other unforeseen circumstances. Any changes or exceptions will be communicated to the participants in a fair and transparent manner.
+5. **Public Datasets Usage:** Participants are allowed to use only public datasets that are accessible to anyone. The source and details of the datasets used must be clearly disclosed in the submission.
+6. **Prize Eligibility:** All team members must be eligible to receive the prizes as per the laws and regulations of their respective countries. Participants must ensure that their involvement in the competition does not violate any government restrictions or sanctions. Failure to comply with this requirement may result in disqualification and forfeiture of any prizes awarded.
+7. **Multiple Tracks:** The competition consists of two tracks, namely Track A and Track B. Teams have the option to participate in either one or both tracks. However, registration must be made individually for each track. Teams cannot submit the same project for both tracks.
+8. **Registration and Submission Process:** Official registration for each track of the coding competition must be completed individually through the designated Google Form provided by the competition organizers. Each registered participant/team is required to provide the necessary information and details accurately in the form.
+9. **Submission Limitation:** Each team is allowed to submit a single submission per track. Multiple submissions from the same team for a single track will not be considered.
+10. **Codalab Validation Server:** The Codalab validation server is freely available for participants to use for testing and evaluation purposes. Its usage is not bound by any restrictions, as long as it complies with the competition guidelines and rules.
+11. **Exceptions and Rule Modifications:** The competition organizers reserve the right to grant exceptions to any of the aforementioned rules or modify the rules in the event of abuse, technical issues, or other unforeseen circumstances. Any changes or exceptions will be communicated to the participants in a fair and transparent manner.
 
 By submitting a project as an individual or a team, you agree to the aforementioned distribution of prizes in the case of a team submission.
 Please note that the competition organizers hold no liability or responsibility for any disputes or disagreements arising within a team regarding the distribution of prizes.
