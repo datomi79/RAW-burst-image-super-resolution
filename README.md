@@ -14,7 +14,7 @@ The top ranked participants in each track will be awarded and all participants a
 - 12/06/2023: Start of Track 2.
 - 31/07/2023: Track 1 & 2 submission deadline.
 - End of August: Notification of winners.
-- 20/09/2023: Award cerimony.
+- 20/09/2023: Award ceremony.
 
 ## Prizes
 
