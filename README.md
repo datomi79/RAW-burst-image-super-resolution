@@ -48,6 +48,8 @@ pre-generated with the [data generation code](datasets/synthetic_burst_train_set
 using the RGB images from the validation split of the 
 raw BurstSR dataset. The dataset can be downloaded from [here](https://figshare.com/articles/dataset/synburst_val_2023_zip/22439116).
 
+**Test set:** The bursts in the validation set have been generated with the [data generation code](datasets/synthetic_burst_train_set.py), from unpublished RGB images taken with a Canon DSLR camera. [Data](#data) for more details. 
+
 #### Registration
 
 Refer to the [Competition Rules](#competition-rules).
