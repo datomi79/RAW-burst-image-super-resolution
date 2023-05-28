@@ -10,7 +10,7 @@ class SyntheticBurstTest(torch.utils.data.Dataset):
     """
     def __init__(self, root):
         self.root = root
-        self.burst_list = list(range(92))
+        self.burst_list = list(range(80))
         self.burst_size = 14
 
     def __len__(self):
