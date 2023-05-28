@@ -157,8 +157,7 @@ evaluation scripts. The toolkit contains the following modules.
     
 * [utils](utils): Contains utility functions.
 
-**Installation:** The toolkit requires [PyTorch](https://pytorch.org/) and [OpenCV](https://opencv.org/) 
-for track 1. The necessary packages can be installed with [anaconda](https://www.anaconda.com/), using the [install.sh](install.sh) script. 
+**Installation:** The toolkit requires [PyTorch](https://pytorch.org/) and [OpenCV](https://opencv.org/) for Track 1 & 2, as well as the [ONNX](https://onnxruntime.ai/) runtime for Track 2. The necessary packages can be installed with [anaconda](https://www.anaconda.com/), using the [install.sh](install.sh) script. 
 
 
 ## Data
