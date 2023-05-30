@@ -70,8 +70,7 @@ For the final submission, you need to submit:
 * The code and model files necessary to reproduce your results. You should provide clear instructions on how to download the datasets and any external dependencies. The organizers need to have all the necessary resources in order to replicate both training and inference.
 * A factsheet (both PDF and tex files) describing your method. The template for the factsheet is available [here](https://figshare.com/articles/media/RAW_Burst_Image_Super_Resolution_Template_zip/22439071).  
 
-The results, code, and factsheet should be submitted via a Google Form, which will be made available with the release of test data for Track 1.
-<!-- The results, code, and factsheet should be submitted via the [Google Form] [TODO](https://docs.google.com/forms/d/e/1FAIpQLSduZNcb6M-e_ROEnATRJ7e58ChUrLgrQ7iSmS6ysoON3wHZqg/viewform?usp=sf_link) -->
+The results, code, and factsheet should be submitted via this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfqSlOihce37C37PZtclzSg5W7ygIlXUtZ3NZqaCo5iRM0URg/viewform?usp=sf_link).
 
 ### Track 2: Minimize inference time while maximizing quality
 
@@ -110,7 +109,7 @@ For the final submission, participants need to submit:
 * The code and model files necessary to reproduce their results.
 * A factsheet (both PDF and tex files) describing their method. The template for the factsheet is available [here](https://figshare.com/articles/media/RAW_Burst_Image_Super_Resolution_Template_zip/22439071).
 
-The results, code, and factsheet should be submitted via a google form, which will be made available with the release of test data for Track 2.
+The results, code, and factsheet should be submitted via this [Google Form](https://docs.google.com/forms/d/e/1FAIpQLScRhAGcZS221TsfaOQVkC5mWA8KFPtftI5o0Wt3vSPaaAeVnw/viewform?usp=sf_link).
 
 
 ## Toolkit
