@@ -52,17 +52,21 @@ raw BurstSR dataset. The dataset can be downloaded from [here](https://figshare.
 
 #### Registration
 
-Refer to the [Competition Rules](#competition-rules).
+For Track 1 you can register to an optional validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565). By registering through the provided link, you'll gain access to a platform that not only enables competition participation but also facilitates updates and announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
+
+If you prefer not to work with Codalab and manually check for updates here, we also provide the option of solely submitting the final solution through the Google form, as explained in the [Final Submission](#final-submission) section.
+
+Please refer to the [Competition Rules](#competition-rules) section to verify eligibility criteria and any other specific requirements.
 
 #### Evaluation
 The proposed methods will be ranked using the fidelity (in terms of PSNR) with the high-resolution ground truth, i.e. the linear sensor space image used to generate the burst. The focus of the challenge is on learning to reconstruct the original high-resolution image, and not the subsequent post-processing. Hence, the PSNR computation will be computed in the linear sensor space, before post-processing steps such as color correction, white-balancing, gamma correction etc.
 
 #### Validation
-The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/13565) to obtain the performance measures, as well as a live leaderboard ranking. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_2023_zip/22439179).
+The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/13565) to obtain the performance measures, as well as a live leaderboard ranking. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_2023_zip/22439179).
 
 #### Final Submission
 <!-- The test set is now public. You can download the test set containing 92 synthetic bursts from this [link][TODO]. -->
-The test set will be made publib shortly.
+The test set will be made public shortly.
 You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) to load the burst sequences.
 
 For the final submission, you need to submit:
@@ -81,6 +85,12 @@ The goal of this track is to optimize the trade-off between image quality and in
 
 #### Registration
 
+For this track there will be no specific online validation server, however even if your team is only competing in Track 2 we still suggest to register to the Track 1 validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565). By registering through the provided link, you'll gain access to a platform that not only enables competition participation but also facilitates updates and announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
+
+If you prefer not to work with Codalab and manually check for updates here, we also provide the option of solely submitting the final solution through the Google form, as explained in the [Final Submission](#final-submission) section.
+
+Please refer to the [Competition Rules](#competition-rules) section to verify eligibility criteria and any other specific requirements.
+
 Refer to the [Competition Rules](#competition-rules).
 
 <!--If you wish to participate in Track 2, please register for the challenge at the **TODO** [codalab page](test) to get access to the evaluation server and receive email notifications for the challenge.-->
@@ -98,7 +108,7 @@ The higher the score, the better the model. This metric aims to balance the trad
 
 #### Final Submission
 
-For this track there will be no online validation server.
+For this track there will be no specific online validation server, however the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/13565) for Track 1 can be still used to evaluate the PSNR metric.
 The test set will be made public at a later date, see [Dates](#dates). 
 
 The score will be computed using the [ONNX runtime](https://onnxruntime.ai/) on the CPU. The partecipants will be required to provide an ONNX model that can be run with the [save_results_onnx_inference.py](scripts/save_results_onnx_inference.py). This scripts also shows how the test set prediction will be generated for scoring (same format as [Track 1](#track-1-maximize-quality-based-on-a-simple-metric)), as well as an inference time measurement example.
