@@ -52,7 +52,7 @@ raw BurstSR dataset. The dataset can be downloaded from [here](https://figshare.
 
 #### Registration
 
-For Track 1 you can register to an optional validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565). By registering through the provided link, you'll gain access to a platform that not only enables competition participation but also facilitates updates and announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
+For Track 1 you can register to an optional validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565). By registering through the provided link, you will not only gain access to the validation server but also receive timely updates and important announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
 
 If you prefer not to work with Codalab and manually check for updates here, we also provide the option of solely submitting the final solution through the Google form, as explained in the [Final Submission](#track-1-final-submission) section.
 
@@ -85,7 +85,7 @@ The goal of this track is to optimize the trade-off between image quality and in
 
 #### Registration
 
-For this track there will be no specific online validation server, however even if your team is only competing in Track 2 we still suggest to register to the Track 1 validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565). By registering through the provided link, you'll gain access to a platform that not only enables competition participation but also facilitates updates and announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
+For this track there will be no specific online validation server, however even if your team is only competing in Track 2 we still suggest to register to the Track 1 validation server hosted on [Codalab](https://codalab.lisn.upsaclay.fr/competitions/13565).  By registering through the provided link, you will not only gain access to the validation server but also receive timely updates and important announcements. This includes important information such as time extensions and details about the upcoming award ceremony, including the location and date. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university.
 
 If you prefer not to work with Codalab and manually check for updates here, we also provide the option of solely submitting the final solution through the Google form, as explained in the [Final Submission](#track-2-final-submission) section.
 
