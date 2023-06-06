@@ -65,7 +65,7 @@ The proposed methods will be ranked using the fidelity (in terms of PSNR) with t
 The results on the validation set can be uploaded on the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/13565) to obtain the performance measures, as well as a live leaderboard ranking. Note that in order to get accepted, you have to register on Codalab with a valid student email from a Swiss university. The results should be uploaded as a ZIP file containing the network predictions for each burst. The predictions must be normalized to the range [0, 2^14] and saved as 16 bit (uint16) png files. Please refer to [save_results_synburst_val.py](scripts/save_results_synburst_val.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_2023_zip/22439179).
 
 #### Track 1: Final Submission
-You can download the test set containing 80 synthetic bursts from this [link][https://figshare.com/articles/dataset/synburst_test_2023_zip/23300981]. The format of the predictions is the same as for the [validation server](validation). 
+You can download the test set containing 80 synthetic bursts from this [link](https://figshare.com/articles/dataset/synburst_test_2023_zip/23300981). The format of the predictions is the same as for the [validation server](validation). 
 You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) to load the burst sequences.
 Please refer to [save_results_synburst_test.py](scripts/save_results_synburst_test.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_test_2023_zip/23301134).
 
@@ -107,7 +107,7 @@ The higher the score, the better the model. This metric aims to balance the trad
 
 For this track there will be no specific online validation server, however the [Codalab server](https://codalab.lisn.upsaclay.fr/competitions/13565) for Track 1 can be still used to evaluate the PSNR metric.
 
-The test set is the same as for Track 1, it contains 80 synthetic bursts from this [link][https://figshare.com/articles/dataset/synburst_test_2023_zip/23300981]. The format of the predictions is the same as for the Track 1 [validation server](validation). 
+The test set is the same as for Track 1, it contains 80 synthetic bursts from this [link](https://figshare.com/articles/dataset/synburst_test_2023_zip/23300981). The format of the predictions is the same as for the Track 1 [validation server](validation). 
 You can use the dataset class provided in [synthetic_burst_test_set.py](datasets/synthetic_burst_test_set.py) to load the burst sequences.
 Please refer to [save_results_synburst_test.py](scripts/save_results_synburst_test.py) for an example on how to save the results. An example submission file is available [here](https://figshare.com/articles/dataset/synburst_example_submission_test_2023_zip/23301134).
 
